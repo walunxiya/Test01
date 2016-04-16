@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rb_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/recommend"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/selector_recommend"
+            android:background="@drawable/selector_rbn"
+            android:text="@string/string_recommend" />
+        <RadioButton
+            android:id="@+id/forum"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/selector_luntan"
+            android:background="@drawable/selector_rbn"
+            android:text="@string/string_forum" />
+
+        <RadioButton
+            android:id="@+id/taopet"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/selector_pet"
+            android:background="@drawable/selector_rbn"
+            android:text="@string/string_taopet" />
+        <RadioButton
+            android:id="@+id/service"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/selector_server"
+            android:background="@drawable/selector_rbn"
+            android:text="@string/string_service" />
+        <RadioButton
+            android:id="@+id/mine"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/selector_my"
+            android:background="@drawable/selector_rbn"
+            android:text="@string/string_mine" />
+    </RadioGroup>
+
+</LinearLayout>

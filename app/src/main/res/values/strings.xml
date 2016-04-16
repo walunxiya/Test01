@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestData</string>
+    <string name="string_recommend">推荐</string>
+    <string name="string_forum">论坛</string>
+    <string name="string_taopet">淘宠</string>
+    <string name="string_service">服务</string>
+    <string name="string_mine">我的</string>
+    <string name="title_activity_service">ServiceActivity</string>
+</resources>

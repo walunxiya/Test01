@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_head"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorAccent">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="上海"
+                    android:textColor="@color/white"/>
+                <ImageView
+                    android:id="@+id/iv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/area"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:background="@drawable/searchcolor">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/searchiv"/>
+
+                <TextView
+                    android:id="@+id/btn_search"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/search"
+                    android:text="站内搜索"
+                    android:textColor="@color/gray_line"/>
+
+        </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="消息"
+            android:textColor="@color/white"/>
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

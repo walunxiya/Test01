@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="170dp"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv_scollview"
+        android:layout_width="150dp"
+        android:layout_height="100dp"  />
+    <TextView
+        android:id="@+id/tv_petname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:text="拉布拉多"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/tv_petprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="$2000"
+            android:maxLines="1"
+            android:maxWidth="50dp"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/tv_petlook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxWidth="50dp"
+            android:maxLines="1"
+            android:gravity="right"
+            android:text="$2000"/>
+    </RelativeLayout>
+
+</LinearLayout>
