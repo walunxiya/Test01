@@ -1,17 +1,18 @@
 package com.example.com.testdata.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.com.testdata.NetUtils;
 import com.example.com.testdata.R;
 import com.example.com.testdata.TestData;
-import com.example.com.testdata.adapter.RingAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +28,7 @@ public class ActionFrament extends Fragment implements Callback<TestData>{
 
 
     private ListView lv_ring;
-    private RingAdapter adapter;
+    private ActionAdapter adapter;
     private List<TestData.DataBean> list = new ArrayList<>();
 
     public static ActionFrament newInstance() {
@@ -45,8 +46,16 @@ public class ActionFrament extends Fragment implements Callback<TestData>{
         View view = inflater.inflate(R.layout.frament_ring, container, false);
         NetUtils.getServices().getListByType(4,30).enqueue(this);
         lv_ring = (ListView) view.findViewById(R.id.lv_ring);
-        adapter = new RingAdapter(getContext(), list);
+        adapter = new ActionAdapter(getContext(), list);
         lv_ring.setAdapter(adapter);
+
+        lv_ring.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getContext(),ActionDetailActivity.class);
+                startActivity(i);
+            }
+        });
         return view;
     }
 

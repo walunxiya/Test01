@@ -31,7 +31,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Activity.ActionActivity"></activity>
+        <activity android:name=".Activity.ActionActivity" />
+        <activity android:name=".Activity.ActionDetailActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".Activity.JoinActivityActivity"></activity>
     </application>
 
 </manifest>

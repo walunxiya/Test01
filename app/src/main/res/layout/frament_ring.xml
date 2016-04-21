@@ -4,14 +4,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="HOOOOOOOOOOOO!"-->
-        <!--android:textSize="20dp"/>-->
 
 <ListView
     android:id="@+id/lv_ring"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:divider="@color/gray_line"
+    android:dividerHeight="10dp"/>
 </LinearLayout>

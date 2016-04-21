@@ -15,8 +15,6 @@ import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
 
-import ExView.MyGridView;
-
 /**
  * Created by GXJ on 2016/4/19.
  */
@@ -61,7 +59,7 @@ public class ActionAdapter extends BaseAdapter{
             vh.sv_vp_image = (SimpleDraweeView) convertView.findViewById(R.id.sv_vp_image);
             vh.tv_vp_ringname = (TextView) convertView.findViewById(R.id.tv_vp_ringname);
             vh.tv_vp_ringtime = (TextView) convertView.findViewById(R.id.tv_vp_ringtime);
-            vh.gv_vp_ringphoto = (MyGridView) convertView.findViewById(R.id.gv_vp_ringphoto);
+            vh.iv_action_image = (SimpleDraweeView)convertView.findViewById(R.id.iv_action_image);
             convertView.setTag(vh);
         }else{
             vh = (ViewHolder) convertView.getTag();
@@ -69,8 +67,8 @@ public class ActionAdapter extends BaseAdapter{
         vh.sv_vp_image.setImageURI(Uri.parse(list.get(position).getPicSmall()));
         vh.tv_vp_ringname.setText(list.get(position).getName());
         vh.tv_vp_ringtime.setText(list.get(position).getName());
-        adapter = new GridViewAdapter(context,list);
-        vh.gv_vp_ringphoto.setAdapter(adapter);
+        vh.iv_action_image.setImageURI(Uri.parse(list.get(position).getPicBig()));
+
         return convertView;
     }
 
@@ -78,6 +76,6 @@ public class ActionAdapter extends BaseAdapter{
         SimpleDraweeView sv_vp_image;
         TextView tv_vp_ringname;
         TextView tv_vp_ringtime;
-        MyGridView gv_vp_ringphoto;
+        SimpleDraweeView iv_action_image;
     }
 }

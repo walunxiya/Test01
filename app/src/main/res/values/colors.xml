@@ -8,11 +8,14 @@
     <color name="colorGreen">#0ff217</color>
     <color name="Pale">#e1e1e1</color>
     <color name="colorBlack">#000000</color>
+    <color name="wordblack">#333333</color>
     <color name="colorTransparent">#cccccc</color>
     <color name="transparent">#00fffefe</color>
     <color name="lightblue">#4cbbff</color>
     <color name="red">#ea5106</color>
     <color name="yellow">#eab906</color>
     <color name="tabLayout">#fff9f5</color>
-    <color name="gray">#24000000</color>
+    <color name="gray">#3d000000</color>
+    <color name="joinactivity">#ffdfdf</color>
+    <color name="wordgray">#999999</color>
 </resources>

@@ -56,7 +56,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/gray"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
 
@@ -68,7 +67,8 @@
             />
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@color/gray">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -82,8 +82,8 @@
                     android:layout_gravity="center"
                     android:text="发多少快乐女粉丝里看到你疯了都看上你发来的康师傅是打发第三方三十
                 是的冯绍峰"
-                    android:maxLines="2"
-                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:textColor="@color/white"
                     android:textSize="20sp"/>
                 <TextView
