@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_petring_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        app:roundedCornerRadius="10dp"
+        app:roundBottomRight="true"
+        app:roundBottomLeft="true"
+        app:roundTopLeft="true"
+        app:roundTopRight="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_petring_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLength="5"
+                android:text="狗狗养成记"
+                android:singleLine="true"
+                android:textSize="20sp"
+                />
+            <ImageView
+                android:id="@+id/iv_petring_look"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/guanzhu"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_petring_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t狗狗养成记，训练注意一些事项dfasfsafsafdsfsdfsdfsdfs"
+            android:maxLines="2"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="90dp"
+        android:background="@color/gray_line"/>
+</LinearLayout>

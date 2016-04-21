@@ -12,4 +12,7 @@
     <color name="transparent">#00fffefe</color>
     <color name="lightblue">#4cbbff</color>
     <color name="red">#ea5106</color>
+    <color name="yellow">#eab906</color>
+    <color name="tabLayout">#fff9f5</color>
+    <color name="gray">#24000000</color>
 </resources>

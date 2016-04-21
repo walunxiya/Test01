@@ -1,6 +1,7 @@
 package com.example.com.testdata;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.com.testdata.Activity.ActionActivity;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
@@ -27,6 +29,8 @@ public class ForumActivity extends AppCompatActivity implements Callback<TestDat
     private List<TestData.DataBean> list = new ArrayList<>();
     private LinearLayout ll_pet;
     private boolean isClick = false;
+    private LinearLayout ll_petring;
+    private LinearLayout ll_action;
 
 
     @Override
@@ -38,6 +42,23 @@ public class ForumActivity extends AppCompatActivity implements Callback<TestDat
 
         listView = (ScrollListView) findViewById(R.id.forumlistview);
 
+        ll_petring = (LinearLayout)findViewById(R.id.ll_petring);
+        ll_petring.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ForumActivity.this,PetRingActivity.class);
+                startActivity(i);
+            }
+        });
+
+        ll_action = (LinearLayout)findViewById(R.id.ll_action);
+        ll_action.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ForumActivity.this,ActionActivity.class);
+                startActivity(i);
+            }
+        });
         ll_pet = (LinearLayout) findViewById(R.id.ll_pet);
 //        listView.addFooterView(view);
         adapter = new ForumAdapter(context, list, 3);
