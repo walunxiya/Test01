@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.com.testdata.Help.HelpDetailActivity">
+    <include layout="@layout/activity_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sv_vp_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    app:placeholderImage="@mipmap/dogdemo"
+                    app:roundAsCircle="true"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/tv_vp_ringname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="喵星圈"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"/>
+                        <ImageView
+                            android:id="@+id/iv_sex"
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignBottom="@id/tv_vp_ringname"
+                            android:background="@mipmap/sex"
+                            android:layout_toRightOf="@id/tv_vp_ringname"
+                            android:layout_marginLeft="10dp"/>
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignBottom="@id/iv_sex"
+                            android:background="@mipmap/vip1"
+                            android:layout_toRightOf="@id/iv_sex"
+                            android:layout_marginLeft="10dp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/shoucang0"/>
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/tv_vp_ringtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:text="这只叫Steve的猫猫，为了吃到东西，居然跟隔壁的狗狗打了起来"
+                        android:maxLines="2"
+                        android:maxWidth="350dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_action_image"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                app:placeholderImage="@mipmap/daxiang3"
+                android:layout_height="200dp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_pinlun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评论  201"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_pinlun"
+                    android:text="评论  201"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="赞  201"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line"/>
+
+            <com.example.com.testdata.ScrollListView
+                android:id="@+id/lv_pinlun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/smell"/>
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/comment"/>
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="评论"
+            android:background="@drawable/search"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

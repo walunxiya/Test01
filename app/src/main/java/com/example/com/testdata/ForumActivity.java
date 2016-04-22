@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.com.testdata.Activity.ActionActivity;
+import com.example.com.testdata.Help.HelpActivity;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class ForumActivity extends AppCompatActivity implements Callback<TestDat
     private boolean isClick = false;
     private LinearLayout ll_petring;
     private LinearLayout ll_action;
+    private LinearLayout ll_help;
 
 
     @Override
@@ -56,6 +58,15 @@ public class ForumActivity extends AppCompatActivity implements Callback<TestDat
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(ForumActivity.this,ActionActivity.class);
+                startActivity(i);
+            }
+        });
+
+        ll_help = (LinearLayout)findViewById(R.id.ll_help);
+        ll_help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ForumActivity.this,HelpActivity.class);
                 startActivity(i);
             }
         });
